@@ -1,0 +1,25 @@
+---
+interface Props{
+    title: string;
+}
+
+const {title} = Astro.props
+
+import Oscuro from '../components/DarkSwitchForm.astro';
+---
+
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+</head>
+<body class="bg-gradient-to-r from-cyan-300 to-cyan-700 dark:bg-gradient-to-r dark:from-blue-950 dark:to-indigo-950 transition-all duration-150">
+    <div class="flex dark:text-white">
+        <div class="flex-grow"></div>
+        <Oscuro />
+    </div>
+    <slot/>
+</body>
+</html>

@@ -1,0 +1,30 @@
+---
+import Button from '../components/ButtonMenu.astro';
+---
+
+<div class="flex md:hidden mr-5" id="menu-imagen">
+    <div class="flex-grow"></div>
+    <img src="/menu.svg">
+</div>
+
+<div class="fixed inset-0 bg-sky-500 dark:bg-blue-800 md:hidden opacity-0 pointer-events-none" id="menu">
+    <div class="flex md:hidden mr-5 mt-[13px] opacity-0" id="menu-open">
+        <div class="flex-grow"></div>
+        <img src="/menu-open.svg">
+    </div>
+    <Button text='Inicio' route="/"/>
+    <Button text='Iniciar sesion' route="/login"/>
+    <Button text='Registrarse' route="/sign_up"/>
+    <Button text='Modo claro (Activo)' id="modo"/>
+    <Button text='Idioma'/>
+
+</div>
+
+<script src="../js/menu.js"></script>
+<script>
+    const modeButton = document.querySelector('#modo');
+
+    modeButton?.addEventListener('click', function(){
+        modeButton.textContent = document.documentElement.classList.toggle('dark') ? 'Modo oscuro (Activo)' : 'Modo claro (Activo)';
+    })
+</script>

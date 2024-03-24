@@ -1,0 +1,47 @@
+---
+import Comentar from './Comentar.astro';
+import Responder from './Respuesta.astro';
+---
+<div class="dark:text-gray-300 mt-24">
+    <h1 class="font-bold text-5xl text-center">Presentacion</h1>
+    <div class="mt-10">
+        <p class="text-xl">Hola, mi nombre es coloco, tengo 14 años, soy un programador y desarollador web que
+            todavia esta aprendiendo cosas nuevas</p>
+        <p class="text-xl">Pienso dedicarme al desarrollo web tanto en la parte del frontend como del backend, para ser franco me gusta más todo lo del lado del servidor, aunque tambin me interesa y me llama la
+            atencion el tema del desarrollo de aplicaciones, tanto de escritorio como de telefono.</p>
+        <p class="text-xl">Intente hacer contenido para redes sociales sobre videojuegos pero no resulto bien, asi que si vuelvo, subire videos sobre programacion y desarrollo web que es lo que eh estado haciendo ultimamente</p>
+        <p class="text-xl">Esta web es un blog en desarrollo que se irá actualizando continuamente, esta desarrollado con Astro, tailwind y JavaSript, por el momento todo es estatico, los comentarios y el formulario, en un futuro implementaré Backend para hacerlos funcionales</p>
+        <h1 class="font-bold text-5xl text-center mt-3">Tecnologias y lenguajes aprendidos</h1>
+        <p class="text-xl mt-3">Hasta el momento los lenguajes y tecnologias que he aprendido son:</p>
+        <div class="ml-7 mt-3 font-bold">
+            <ul class="list-decimal">
+                <li >Python (Lo básico de creación de GUI usando CustomTkinter y MySQL)</li>
+                <li>JavaScript (Aún lo sigo aprendiendo, y cuento con lo básico de DOM)</li>
+                <li>TailwindCSS (Si bien, este framework lo he aprendido para estilar más rápido y mejor la página)</li>
+                <li>Astro (Nuevamente un framework, este es un framework que te ayuda a generar sitios estaticos muy
+                    optimizados ya que ejecuta muy poco JS)</li>
+            </ul>
+        </div>
+        <p class="text-xl mt-3">Y seguiré aprendiendo más acerca de Flask (Libreria de Python) y PHP que me
+            ayudará a la parte de Backend para las futuras páginas, así como, TypeScript y React para la parte lógica de la página. </p>
+        <div class="bg-white w-full h-[3px] mt-5">
+            <h1 class="text-5xl font-bold text-center pt-5">Comentarios</h1>
+            <div class="flex items-center justify-center my-7">
+                <button id="comentar" class="bg-blue-600 px-3 py-3 w-[250px] md:w-[400px] rounded-md text-white font-bold hover:bg-blue-500">Añadir comentario</button>
+            </div>
+            <Comentar />
+            <Responder />
+            <link href="https://file.myfontastic.com/tc26fJHv8scB3d4vHQRRsV/icons.css" rel="stylesheet">
+            <div id="comments-container">
+                
+            </div>
+
+            <div id="replys-container">
+
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<script src="../js/comentar.js"></script>

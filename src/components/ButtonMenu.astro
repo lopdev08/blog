@@ -1,0 +1,15 @@
+---
+interface Props{
+    id?: string;
+    text: string;
+    route?: string;
+}
+
+const {id} = Astro.props;
+const {text} = Astro.props;
+const {route} = Astro.props
+---
+
+<div class="flex text-white items-center justify-center h-[0px] mt-[90px] w-full pointer-events-auto">
+    <button class="bg-blue-600 dark:bg-blue-500 w-full mx-3 h-14 rounded-sm btn-menu hidden" id={id}><a href={route}>{text}</a></button>    
+</div>

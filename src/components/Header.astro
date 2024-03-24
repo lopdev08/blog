@@ -1,0 +1,49 @@
+---
+import Button from '../components/Button.astro';
+import Oscuro from '../components/DarkSwitch.astro';
+import Menu from '../components/Menu.astro';
+---
+<header class="bg-[#4bafbe] dark:bg-blue-900 dark:text-white w-full h-auto fixed top-0 transition-all duration-150">
+    <div class="flex">
+        <div class="flex ml-4 mt-3" id="">
+            <a href="/index.html" class=""><img src="/home_light.svg" class="w-10 cursor-pointer hidden md:block" id="home"></a>
+        </div>
+        <div id="search-div" class="flex mt-3 mb-3 bg-white ml-2 md:ml-12 pl-1 border-[3px] border-blue-500 dark:border-sky-600 dark:hover:border-sky-500 rounded-xl hover:border-blue-700 transition-all duration-300">
+            <img src="/search.svg" class="w-7">
+            <input type="text" placeholder="Buscar..." name="" id="search" autocomplete="off" class="focus:outline-none rounded-xl w-full md:w-36 h-10 dark:text-black ml-0">
+        </div>
+        <div class="flex gap-3 ml-5 justify-center items-center">
+            <Button text="Iniciar sesion" route='/login'/>
+            <Button text="Registrarse" route='/sign_up'/>
+        </div>
+
+
+            <div class="flex-grow"></div>
+            <Oscuro />
+            <Menu />
+            <div id="filter" class="fixed inset-0 flex justify-center bg-[#00000065] mt-[69px] h-auto opacity-0 pointer-events-none transition-all duration-500">
+                <div class="bg-white dark:bg-slate-600 w-3/4 h-auto pb-auto mb-auto">
+                    <ul class="ml-7 flex flex-col gap-y-5 mt-5 mr-4 mb-3 text-gray-500 dark:text-gray-300 font-semibold " id="lista">
+                        <li class="border border-white dark:border-slate-600 dark:hover:ring-slate-400 w-full cursor-pointer hover:ring-2 hover:ring-blue-600 pl-7 py-3 articulo"><a href="/post/about">Acerca de</a></li>
+                        <li class="border border-white dark:border-slate-600 dark:hover:ring-slate-400 w-full cursor-pointer hover:ring-2 hover:ring-blue-600 pl-7 py-3 articulo"><a href="/post/creditos">Creditos</a></li> 
+                    </ul>
+                </div>
+            </div>
+    </div>
+</header>
+
+<script>
+    const searchInput = document.querySelector('#search');
+    const searchDiv = document.querySelector('#search-div');
+
+    searchInput?.addEventListener('focus', function(){
+        searchDiv?.classList.add('border-blue-700');
+    })
+
+    searchInput?.addEventListener('blur', function(){
+        searchDiv?.classList.remove('border-blue-700');
+    })
+</script>
+
+<script src="../js/buscador.js"></script>
+<script src="../js/dark_mode.js"></script>

@@ -1,0 +1,11 @@
+---
+interface Props{
+    text: string;
+    route?: string;
+}
+
+const {text} = Astro.props;
+const {route} = Astro.props;
+---
+
+<button class="bg-white hidden md:block dark:bg-sky-600  dark:hover:bg-sky-500 rounded-full h-9 px-3 hover:bg-blue-800 hover:text-white transition-all duration-200"><a href={route}>{text}</a></button>

@@ -1,0 +1,92 @@
+{
+    "comments": [
+      {
+        "id": 1,
+        "name": "Usuario1",
+        "comment": "¡Este es un comentario genial!",
+        "date": "2024-03-02",
+        "type": "comentario",
+        "replies": [
+          {
+            "id": 11,
+            "name": "Usuario2",
+            "comment": "Gracias por el comentario!",
+            "date": "2024-03-03",
+            "type": "respuesta"
+          },
+          {
+            "id": 12,
+            "name": "Usuario3",
+            "comment": "Estoy de acuerdo contigo.",
+            "date": "2024-03-04",
+            "type": "respuesta"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Usuario4",
+        "comment": "Me encanta este contenido.",
+        "date": "2024-03-05",
+        "type": "comentario",
+        "replies": []
+      },
+      {
+        "id": 3,
+        "name": "Usuario5",
+        "comment": "No estoy seguro de entender completamente.",
+        "date": "2024-03-06",
+        "type": "comentario",
+        "replies": [
+          {
+            "id": 13,
+            "name": "Usuario6",
+            "comment": "¿Puedo ayudarte a aclarar algo?",
+            "date": "2024-03-07",
+            "type": "respuesta"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Usuario7",
+        "comment": "¿Cuál es el propósito de esta aplicación?",
+        "date": "2024-03-08",
+        "type": "comentario",
+        "replies": [
+          {
+            "id": 14,
+            "name": "Usuario8",
+            "comment": "La aplicación sirve para...",
+            "date": "2024-03-09",
+            "type": "respuesta"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Usuario9",
+        "comment": "Necesito ayuda con la instalación.",
+        "date": "2024-03-10",
+        "type": "comentario",
+        "replies": []
+      },
+      {
+        "id": 6,
+        "name": "Usuario10",
+        "comment": "Cuando implementaran el BackEnd?",
+        "date": "2024-03-16",
+        "type": "comentario",
+        "replies": [
+          {
+            "id": 15,
+            "name": "Usuario11",
+            "comment": "Muy pronto",
+            "date": "2024-03-16",
+            "type": "respuesta"
+          }
+        ]
+      }
+    ]
+  }
+  
